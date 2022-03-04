@@ -2,8 +2,8 @@ package Task2;
 
 public class BicycleApplication {
     public static void main(String[] args) {
-        Bicycle mountainBike = new MountainBike(0,0);
-        Bicycle roadBike = new RoadBike(0,0);
+        Bicycle mountainBike = new MountainBike(0, 0);
+        Bicycle roadBike = new RoadBike(0, 0);
 
         roadBike.speedUp(50);
         mountainBike.speedUp(100);
@@ -23,6 +23,6 @@ public class BicycleApplication {
         mountainBike.changeGear(2);
 
         System.out.println(Speedometer.chooseWinner((MountainBike) mountainBike, (RoadBike) roadBike));
-        System.out.println(Speedometer.chooseWinner(mountainBike.getSpeed(),roadBike.getSpeed()));
+        System.out.println(Speedometer.chooseWinner(mountainBike.getSpeed(), roadBike.getSpeed()));
     }
 }
